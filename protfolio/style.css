@@ -1,0 +1,117 @@
+@import "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Kavoon&display=swap";
+
+:root {
+    --Primary-color: white;
+    --secondary-color: rgb(47, 137, 255);
+    --Heading-font: "Kavoon",serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(23, 23, 27);
+    font-family: "Karla",sans-serif;
+    color: whitesmoke;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 4rem;
+    border-bottom: 2px solid rgba(225, 225, 225, 0.2);
+    align-items: center;
+    height: 17vh;
+}
+
+nav h1 {
+    font-family: var(--Heading-font);
+    font-size: 2rem;
+}
+
+nav ul {
+list-style: none;
+}
+nav ul li {
+    display: inline;
+   padding-left: 1.5em;
+}
+
+nav ul li a {
+    display: inline;
+    text-decoration: none;
+    font-size: larger;
+
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid rgb(129, 128, 128);
+    padding-bottom: 4px;
+    
+}
+
+nav ul li .Active {
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+    
+}
+
+
+.container {
+    height: 96vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#Hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact .Hero-items {
+    display: flex;
+    justify-content: left;
+}
+
+
+.contact .Hero-items h2 {
+    margin-top: 30px;
+}
+
+.contact {
+    border: 5em;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    padding: 0.7em 2em;
+    border-radius: 1px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+    color: white;
+    background-image: linear-gradient(45deg, #b06ab3, #4568dc);
+    transition: background-image 2s;
+    margin-top: 20px;
+}
+
+.contact:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;    
+}
+
+#About {
+    display: flex;
+    
+}
+
+#About h1 {
+    text-align: center;
+}
+
+#About img {
+    max-width: 30%;
+}
